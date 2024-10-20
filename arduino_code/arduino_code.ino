@@ -1,19 +1,19 @@
 #include <Servo.h>
-#include <PID_v1.h>
+#include <PID_v1_bc.h>
 
 // Pin Definitions
 const int trigPin = 5;   // Ultrasonic sensor trigger pin
-const int echoPin = 4;   // Ultrasonic sensor echo pin
-const int servoPin = 2;  // Servo motor pin
+const int echoPin = 6;   // Ultrasonic sensor echo pin
+const int servoPin = 9;  // Servo motor pin
 
 // Ultrasonic Sensor Variables
 long duration;
-float distance;  // Measured distance from the ball (in meters)
+int distance;  // Measured distance from the ball (in meters)
 const float beamLength = 25;  // Length of the beam (in meters)
 
 // PID control variables
 double setpoint, ballPosition, servoOutput;
-double kp = 2.0, ki = 0.5, kd = 0.1;  // PID constants (tune these)
+double kp = 3.0, ki =  1.5, kd = 0.5;  // PID constants (tune these)
 
 // Create Servo object and PID controller
 Servo servoMotor;
@@ -32,12 +32,9 @@ float measureDistance() {
   duration = pulseIn(echoPin, HIGH);
   
   // Calculate distance in meters (speed of sound is ~343 m/s)
-  float measuredDistance = (duration*.0343)/2;
+  distance = (duration*0.034)/2;
   
-  // Limit the range to the beam length
-  // measuredDistance = constrain(measuredDistance, 0, beamLength);
-  
-  return measuredDistance;
+
 }
 
 void setup() {
@@ -49,7 +46,7 @@ void setup() {
   servoMotor.attach(servoPin);
 
   // Set initial servo position (middle)
-  servoMotor.write(90);
+  servoMotor.write(0);
 
   // Set the desired position (setpoint) in meters
   setpoint = beamLength / 2;  // Target is to keep the ball at the center of the beam
