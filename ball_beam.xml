@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimscapeMultibodyImportXML xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+   <Created by="" on="10/19/24||17:16:42" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.0.0" />
+   <ModelUnits mass="kilogram" length="millimeter" />
+   <DataUnits mass="kilogram" length="meter" />
+   <RootAssembly name="ball and beam assembly" uid="ball and beam assembly" version="302">
+      <AssemblyFile name="ball and beam assembly.SLDASM" type="SolidWorks Assembly" />
+      <InstanceTree>
+         <Instance name="motor mount-1" uid="motor mount-1" grounded="true" entityUid="motor mount*:*Default">
+            <Transform>
+               <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+               <Translation>0.018224488945384462 0.048595264925001151 0.044877842917846883</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="crank-2" uid="crank-2" entityUid="crank*:*Default">
+            <Transform>
+               <Rotation>0.999999073894414 0.0013609593361177045 0 -0.0013609593361177045 0.999999073894414 0 0 0 1</Rotation>
+               <Translation>0.047575120152063749 0.10872797625187595 0.066880042896880237</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="c-channel-1" uid="c-channel-1" entityUid="c-channel*:*Default">
+            <Transform>
+               <Rotation>0 -0.038912236186178804 0.99924263213445375 0 0.99924263213445375 0.038912236186178804 -1 0 0</Rotation>
+               <Translation>-0.200456474293804 0.16258201015288898 0.066880042896880376</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="isection-1" uid="isection-1" entityUid="isection*:*Default">
+            <Transform>
+               <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+               <Translation>-0.19977551016054587 0.085095264090536152 0.046880042896880192</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="isection-2" uid="isection-2" entityUid="isection*:*Default">
+            <Transform>
+               <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+               <Translation>-0.19977551016054587 0.085095264090536138 0.081880042896880154</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="SERVO MG995-1" uid="SERVO MG995-1" entityUid="SERVO MG995*:*Predeterminado">
+            <Transform>
+               <Rotation>1.04744440165294e-14 1 0 -1 1.04744440165294e-14 0 0 0 1</Rotation>
+               <Translation>0.01822448894538346 0.048595264925001436 0.0148778426943294</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="crank-1" uid="crank-1" entityUid="crank*:*Default">
+            <Transform>
+               <Rotation>0.99999797991550832 -0.0020100161447914365 0 0.0020100161447914365 0.99999797991550832 0 0 0 1</Rotation>
+               <Translation>0.047428482718644201 0.10872792866379358 0.06188004289688024</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="servo attachment-1" uid="servo attachment-1" entityUid="servo attachment*:*Default">
+            <Transform>
+               <Rotation>-0.97530806455463925 -0.22084877000944239 -1.0662110202409251e-16 -0.22084877000944239 0.97530806455463925 0 0 0 -1</Rotation>
+               <Translation>0.075568243067803603 0.022426518782884802 0.062863562036655912</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="sensor holder-1" uid="sensor holder-1" entityUid="sensor holder*:*Default">
+            <Transform>
+               <Rotation>0 -0.03891223618617852 0.99924263213445363 0 0.99924263213445363 0.03891223618617852 -1 0 0</Rotation>
+               <Translation>-0.20113743842706214 0.18006875621524218 0.096880042896881277</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="isection-3" uid="isection-3" entityUid="isection*:*Default">
+            <Transform>
+               <Rotation>0 0 -1 0 -1 0 -1 0 0</Rotation>
+               <Translation>-0.19727551016054584 0.085095264090536124 0.066880042896880182</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="SENSORultimo-1" uid="SENSORultimo-1" entityUid="SENSORultimo*:*Predeterminado">
+            <Transform>
+               <Rotation>0 0.99924263213445363 0.038912236186178832 0 0.038912236186178832 -0.99924263213445363 -1 0 0</Rotation>
+               <Translation>-0.21306384768095477 0.19336474291456851 0.089302956379865045</Translation>
+            </Transform>
+         </Instance>
+         <Instance name="hinge-1" uid="hinge-1" entityUid="hinge*:*Default">
+            <Transform>
+               <Rotation>0 -0.038912236186178936 -0.99924263213445363 0 0.99924263213445363 -0.038912236186178936 1 0 0</Rotation>
+               <Translation>0.046661515978542761 0.17720900176964044 0.041880042896879931</Translation>
+            </Transform>
+         </Instance>
+      </InstanceTree>
+      <Constraints>
+         <Distance name="Distance1">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>SERVO MG995-1</Uid>
+               </InstancePath>
+               <Position>0.019999999999999997 -0.0090000000000000132 0.029999999999999978</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>motor mount-1</Uid>
+               </InstancePath>
+               <Position>0 0 0.0099999997764825821</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Coincident name="Coincident5">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>SERVO MG995-1</Uid>
+               </InstancePath>
+               <Position>0 0 0.045000000000000005</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>servo attachment-1</Uid>
+               </InstancePath>
+               <Position>0.013902600166805196 0.013902590500754031 0.002985719342326415</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Concentric name="Concentric1">
+            <ConstraintGeometry geomType="circle">
+               <InstancePath>
+                  <Uid>SERVO MG995-1</Uid>
+               </InstancePath>
+               <Position>-0.0099999999999999881 -5.2770982028604863e-12 0.045000000000000005</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="circle">
+               <InstancePath>
+                  <Uid>servo attachment-1</Uid>
+               </InstancePath>
+               <Position>0.047940002754330642 0.047939967364072807 0.002820000285282738</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+         </Concentric>
+         <Concentric name="Concentric2">
+            <ConstraintGeometry geomType="circle">
+               <InstancePath>
+                  <Uid>servo attachment-1</Uid>
+               </InstancePath>
+               <Position>0.017907000323942046 0.047939967329245714 0.00098351913977567929</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>crank-1</Uid>
+               </InstancePath>
+               <Position>0 -0.043500000000000011 0.0049999999999999975</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+         </Concentric>
+         <Coincident name="Coincident6">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>servo attachment-1</Uid>
+               </InstancePath>
+               <Position>0.013902600166805196 0.013902590500754031 0.00098351913977567929</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>crank-1</Uid>
+               </InstancePath>
+               <Position>0 0 0</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Concentric name="Concentric3">
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>crank-1</Uid>
+               </InstancePath>
+               <Position>0 -0.043500000000000011 0.0049999999999999975</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>crank-2</Uid>
+               </InstancePath>
+               <Position>0 -0.043500000000000025 0.0050000000000000044</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+         </Concentric>
+         <Coincident name="Coincident7">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>crank-1</Uid>
+               </InstancePath>
+               <Position>0 0 0.0049999999999999975</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>crank-2</Uid>
+               </InstancePath>
+               <Position>0 0 0</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Concentric name="Concentric4">
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>crank-2</Uid>
+               </InstancePath>
+               <Position>0 0.043500000000000011 0.0050000000000000044</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>hinge-1</Uid>
+               </InstancePath>
+               <Position>0.049999999999999996 -0.025000000000000022 0</Position>
+               <Axis>-1 0 0</Axis>
+            </ConstraintGeometry>
+         </Concentric>
+         <Coincident name="Coincident8">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>hinge-1</Uid>
+               </InstancePath>
+               <Position>0 0 -0.0025000000000000022</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>c-channel-1</Uid>
+               </InstancePath>
+               <Position>0 0 0.25</Position>
+               <Axis>0 0 1.0000000000000002</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Coincident name="Coincident10">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>c-channel-1</Uid>
+               </InstancePath>
+               <Position>0 0 0</Position>
+               <Axis>0 0 -1.0000000000000002</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0 0 0</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Concentric name="Concentric5">
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0.016225000000000003 0.023750000000000021 -0.01000100000000001</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>SENSORultimo-1</Uid>
+               </InstancePath>
+               <Position>0.0086479134829837573 0.013100000000000028 -0.0099999999999999534</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+         </Concentric>
+         <Coincident name="Coincident11">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0.059999999999999998 -0.035000000000000003 -0.010000000000000009</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>SENSORultimo-1</Uid>
+               </InstancePath>
+               <Position>0 0.0014000000000000123 0</Position>
+               <Axis>0 1 0</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Concentric name="Concentric6">
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0.059999999999999998 -0.035000000000000003 0</Position>
+               <Axis>-1 0 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>isection-1</Uid>
+               </InstancePath>
+               <Position>0 0.060000000000000012 0.0049999999999999975</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+         </Concentric>
+         <Concentric name="Concentric7">
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0.059999999999999998 -0.035000000000000003 0</Position>
+               <Axis>-1 0 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="cylinder">
+               <InstancePath>
+                  <Uid>isection-2</Uid>
+               </InstancePath>
+               <Position>0 0.060000000000000026 0.0050000000000000044</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+         </Concentric>
+         <Coincident name="Coincident12">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-1</Uid>
+               </InstancePath>
+               <Position>0 0 0.0049999999999999975</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-3</Uid>
+               </InstancePath>
+               <Position>0.015000000000000013 -0.070000000000000021 0.0050000000000000044</Position>
+               <Axis>1 0 0</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Coincident name="Coincident13">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-2</Uid>
+               </InstancePath>
+               <Position>0 0 0</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-3</Uid>
+               </InstancePath>
+               <Position>-0.014999999999999986 -0.070000000000000021 0.0050000000000000044</Position>
+               <Axis>-1 -1.3629970168388745e-16 0</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Coincident name="Coincident15">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-1</Uid>
+               </InstancePath>
+               <Position>-0.014999999999999986 -0.070000000000000007 0.0049999999999999975</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-2</Uid>
+               </InstancePath>
+               <Position>-0.014999999999999986 -0.070000000000000007 0.0050000000000000044</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Coincident name="Coincident19">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>motor mount-1</Uid>
+               </InstancePath>
+               <Position>0 -0.033500000834465027 0</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-3</Uid>
+               </InstancePath>
+               <Position>-0.014999999999999999 0.070000000000000007 0.0050000000000000044</Position>
+               <Axis>0 1 0</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Distance name="Distance2">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-2</Uid>
+               </InstancePath>
+               <Position>0.015000000000000013 -0.070000000000000007 0.0050000000000000044</Position>
+               <Axis>1 0 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>motor mount-1</Uid>
+               </InstancePath>
+               <Position>-0.039999999105930328 0 0</Position>
+               <Axis>-1 0 0</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Distance name="Distance3">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>hinge-1</Uid>
+               </InstancePath>
+               <Position>0.014500000000000006 -0.032500000000000029 -0.0075010000000000007</Position>
+               <Axis>1 0 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>crank-1</Uid>
+               </InstancePath>
+               <Position>0 0 0</Position>
+               <Axis>0 0 -1</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Distance name="Distance5">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>SERVO MG995-1</Uid>
+               </InstancePath>
+               <Position>-0.020000000000000004 0.0099999999999999915 0</Position>
+               <Axis>0 1 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>motor mount-1</Uid>
+               </InstancePath>
+               <Position>0.010750000365078449 0 0</Position>
+               <Axis>-1 0 0</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Distance name="Distance7">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>SERVO MG995-1</Uid>
+               </InstancePath>
+               <Position>-0.020000000000000004 -0.0099999999999999881 0</Position>
+               <Axis>-1 0 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>motor mount-1</Uid>
+               </InstancePath>
+               <Position>0 0.020800000056624406 0</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Distance name="Distance9">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>c-channel-1</Uid>
+               </InstancePath>
+               <Position>-0.020000000000000004 0.024999999999999994 0.25</Position>
+               <Axis>-1 -1.3877787807814457e-16 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>hinge-1</Uid>
+               </InstancePath>
+               <Position>0.045500000000000006 0.01999999999999999 -0.0025000000000000022</Position>
+               <Axis>-1 0 0</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Distance name="Distance11">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-3</Uid>
+               </InstancePath>
+               <Position>0 0 0.0050000000000000044</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-1</Uid>
+               </InstancePath>
+               <Position>-0.014999999999999986 -0.070000000000000007 0.0049999999999999975</Position>
+               <Axis>-1 -1.3629970168389198e-16 0</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Distance name="Distance12">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0.009000000000000008 -0.045000000000000012 -0.010000999999999982</Position>
+               <Axis>1 0 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-2</Uid>
+               </InstancePath>
+               <Position>0 0 0.0050000000000000044</Position>
+               <Axis>0 0 1</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Coincident name="Coincident26">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>motor mount-1</Uid>
+               </InstancePath>
+               <Position>0 -0.033500000834465027 0</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>isection-2</Uid>
+               </InstancePath>
+               <Position>-0.014999999999999986 -0.070000000000000007 0.0050000000000000044</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+         <Distance name="Distance13">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0.0094999999999999946 0.0074999999999999789 0</Position>
+               <Axis>1 1.3877787807814457e-16 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>c-channel-1</Uid>
+               </InstancePath>
+               <Position>-0.020000000000000004 0.024999999999999994 0.25</Position>
+               <Axis>-1 -1.3877787807814457e-16 0</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Distance name="Distance14">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>c-channel-1</Uid>
+               </InstancePath>
+               <Position>0.020000000000000004 0.024999999999999994 0.25000000000000006</Position>
+               <Axis>0 1.0000000000000002 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>sensor holder-1</Uid>
+               </InstancePath>
+               <Position>0.0094999999999999946 0.0074999999999999789 0</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+         </Distance>
+         <Coincident name="Coincident30">
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>hinge-1</Uid>
+               </InstancePath>
+               <Position>0.004500000000000004 0.01999999999999999 -0.0025000000000000022</Position>
+               <Axis>0 -1 0</Axis>
+            </ConstraintGeometry>
+            <ConstraintGeometry geomType="plane">
+               <InstancePath>
+                  <Uid>c-channel-1</Uid>
+               </InstancePath>
+               <Position>0.020000000000000004 0.024999999999999994 0.25000000000000006</Position>
+               <Axis>0 1.0000000000000002 0</Axis>
+            </ConstraintGeometry>
+         </Coincident>
+      </Constraints>
+   </RootAssembly>
+   <Assemblies />
+   <Parts>
+      <Part name="SENSORultimo" uid="SENSORultimo*:*Predeterminado" version="464">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="SENSORultimo.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.0039805793827838026</Mass>
+            <CenterOfMass>0.022397414291394521 0.0037322719108821806 -0.0099885178413050297</CenterOfMass>
+            <Inertia>1.3717028185947887e-07 8.4759330444652898e-07 7.9388897646072882e-07 1.5702517366588301e-09 2.8576602062751657e-10 -2.2315155144135868e-10</Inertia>
+         </MassProperties>
+         <GeometryFile name="SENSORultimo_Predeterminado_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1" />
+            <Emissive r="0" g="0" b="0" a="1" />
+            <Shininess>0.40000000596046448</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="SERVO MG995" uid="SERVO MG995*:*Predeterminado" version="103">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="SERVO MG995.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.030662228235631691</Mass>
+            <CenterOfMass>-0.00016792679400037092 3.9066458758322444e-10 0.019421785388143934</CenterOfMass>
+            <Inertia>4.7057722462742051e-06 7.8646784720203306e-06 5.1508960795335121e-06 -1.7678436986556332e-13 1.3761878890209351e-07 -4.0324449987914707e-14</Inertia>
+         </MassProperties>
+         <GeometryFile name="SERVO MG995_Predeterminado_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1" />
+            <Emissive r="0" g="0" b="0" a="1" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="c-channel" uid="c-channel*:*Default" version="122">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="c-channel.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.12000000000000002</Mass>
+            <CenterOfMass>0 0.0087499999999999991 0.125</CenterOfMass>
+            <Inertia>0.0006318125000000001 0.00065150000000000017 3.3312500000000017e-05 0 0 0</Inertia>
+         </MassProperties>
+         <GeometryFile name="c-channel_Default_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="1" g="1" b="1" a="0.30000000000000004" />
+            <Diffuse r="1" g="1" b="1" a="0.30000000000000004" />
+            <Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="0.30000000000000004" />
+            <Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="0.30000000000000004" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="crank" uid="crank*:*Default" version="120">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="crank.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.011404380550980751</Mass>
+            <CenterOfMass>0 0 0.0025000000000000001</CenterOfMass>
+            <Inertia>8.7042700683521269e-06 4.1139097075878271e-07 9.0681427868151579e-06 0 0 0</Inertia>
+         </MassProperties>
+         <GeometryFile name="crank_Default_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="1" g="1" b="1" a="0.30000000000000004" />
+            <Diffuse r="1" g="1" b="1" a="0.30000000000000004" />
+            <Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="0.30000000000000004" />
+            <Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="0.30000000000000004" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="hinge" uid="hinge*:*Default" version="154">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="hinge.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.031155447839621056</Mass>
+            <CenterOfMass>0.024999999999999998 -3.4161633496794546e-05 -0.00035306826775929331</CenterOfMass>
+            <Inertia>8.3514259562417855e-06 7.9299039012324086e-06 1.5088549942997312e-05 4.2657027968464638e-08 0 0</Inertia>
+         </MassProperties>
+         <GeometryFile name="hinge_Default_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1" />
+            <Emissive r="0" g="0" b="0" a="1" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="isection" uid="isection*:*Default" version="128">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="isection.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.025082190275490385</Mass>
+            <CenterOfMass>0 -0.00028181683469183383 0.0025000000000000001</CenterOfMass>
+            <Inertia>4.0785963431325336e-05 1.9420704853793907e-06 4.2623524790556851e-05 0 0 0</Inertia>
+         </MassProperties>
+         <GeometryFile name="isection_Default_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="1" g="1" b="1" a="0.30000000000000004" />
+            <Diffuse r="1" g="1" b="1" a="0.30000000000000004" />
+            <Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="0.30000000000000004" />
+            <Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="0.30000000000000004" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="motor mount" uid="motor mount*:*Default" version="104">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="motor mount.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.033628647589019733</Mass>
+            <CenterOfMass>-1.9064691748322282e-08 -0.021784487600885714 0.011475798353706892</CenterOfMass>
+            <Inertia>2.1016968039627919e-05 2.6327353128440786e-05 2.5181634776195083e-05 2.590990452623697e-06 -2.8165663506810653e-10 -2.4421819002383605e-09</Inertia>
+         </MassProperties>
+         <GeometryFile name="motor mount_Default_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1" />
+            <Emissive r="0" g="0" b="0" a="1" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="sensor holder" uid="sensor holder*:*Default" version="239">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="sensor holder.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.054163724635780328</Mass>
+            <CenterOfMass>0.029998601049439952 -0.0038432747476225579 -0.0011954502786455518</CenterOfMass>
+            <Inertia>1.8642615204086505e-05 2.0765702822695647e-05 3.5922761525959309e-05 1.0807972383393778e-06 -2.8827976025102153e-10 2.6780437941373086e-09</Inertia>
+         </MassProperties>
+         <GeometryFile name="sensor holder_Default_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1" />
+            <Emissive r="0" g="0" b="0" a="1" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="servo attachment" uid="servo attachment*:*Default" version="127">
+         <ModelUnits mass="kilogram" length="millimeter" />
+         <PartFile name="servo attachment.SLDPRT" type="SolidWorks Part" />
+         <MassProperties>
+            <Mass>0.012661122135801258</Mass>
+            <CenterOfMass>0.047940000575190309 0.047939967243979413 0.0033914453095712821</CenterOfMass>
+            <Inertia>3.4059551673202862e-06 3.3999029272185362e-06 6.7524032416827519e-06 6.7881201616668447e-16 8.293132813694617e-16 0</Inertia>
+         </MassProperties>
+         <GeometryFile name="servo attachment_Default_sldprt.STEP" type="STEP" />
+         <VisualProperties>
+            <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1" />
+            <Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1" />
+            <Emissive r="0" g="0" b="0" a="1" />
+            <Shininess>0.3125</Shininess>
+         </VisualProperties>
+      </Part>
+   </Parts>
+</SimscapeMultibodyImportXML>
